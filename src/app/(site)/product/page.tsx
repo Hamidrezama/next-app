@@ -12,7 +12,7 @@ export default function product() {
 
             <Link href={`product/1`}>product 1</Link>
             <Link href={`product/2`}>product 2</Link>
-            <Link href={`product/3`}>product 3</Link>
+            <Link href={`product/3`} replace>product 3</Link>
         </div>
     </>
 }
