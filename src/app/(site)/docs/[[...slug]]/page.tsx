@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 
 export default async function docs({ params }: { params: Promise<{ slug: string[] }> }) {
     const { slug } = await params
-    if(parseInt(slug[0]) > 1000){
+    if (slug && parseInt(slug[0]) > 1000) {
         notFound()
     }
     return <>
