@@ -19,16 +19,15 @@ export default function MainLayout({
     { name: "register", href: "/register" },
   ]
   return (
-    <html lang="en">
 
 
-      <body>
+      <div>
         <header className='border-b mx-2'>
           <div className='flex justify-around items-center p-2'>
-            {NavList.map((item) => {
+            {NavList.map((item,index) => {
               const isActive = pathname == item.href || (pathname.startsWith(item.href) && item.href !== "/")
               return (
-                <Link className={`border m-1 w-full flex justify-center p-2 rounded-md hover:bg-gray-100 shadow-sm transition-all ${isActive ? "text-blue-300 font-bold" : ""}`} href={item.href}>{item.name}</Link>
+                <Link key={index} className={`border m-1 w-full flex justify-center p-2 rounded-md hover:bg-gray-100 shadow-sm transition-all ${isActive ? "text-blue-300 font-bold" : ""}`} href={item.href}>{item.name}</Link>
               )
             })}
           </div>
@@ -44,9 +43,8 @@ export default function MainLayout({
             <div className='border flex justify-around items-center'>address</div>
           </div>
         </footer>
-      </body>
+      </div>
 
 
-    </html>
   )
 }

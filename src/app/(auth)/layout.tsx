@@ -10,10 +10,9 @@ export default function AuthLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
 
 
-      <body>
+      <div>
         {/* <header className='border-b mx-2'>
           <div className='flex justify-around items-center p-2'>
             <Link className='border m-1 w-full flex justify-center p-2 rounded-md hover:bg-gray-100 shadow-sm transition-all cursor-pointer' href={`/`}>home</Link>
@@ -34,9 +33,8 @@ export default function AuthLayout({
             <div className='border flex justify-around items-center'>address</div>
           </div>
         </footer>
-      </body>
+      </div>
 
 
-    </html>
   )
 }
