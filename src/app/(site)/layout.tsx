@@ -17,6 +17,7 @@ export default function MainLayout({
     { name: "docs", href: "/docs" },
     { name: "login", href: "/login" },
     { name: "register", href: "/register" },
+    { name: "order page", href: "/order-page" },
   ]
   return (
 
